@@ -30,7 +30,6 @@ jobs:
 
       - name: hello_world_wasm
         run: |
-          cd ..
           cd hello_world_wasm
           cargo check --target wasm32-unknown-unknown
           cargo build --target wasm32-unknown-unknown --release       
