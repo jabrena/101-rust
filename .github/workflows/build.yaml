@@ -21,8 +21,14 @@ jobs:
           cd hello_world
           cargo build
 
-      - name: hello_world_wasm
+      - name: hello_world_wasm_web
         run: |
-          cd hello_world_wasm
+          cd hello_world_wasm_web
           cargo check --target wasm32-unknown-unknown
           cargo build --target wasm32-unknown-unknown --release       
+
+      - name: hello_world_wasmjs_web
+        run: |
+          cd hello_world_wasmjs_web
+          cargo install wasm-pack
+          wasm-pack build --target web   
