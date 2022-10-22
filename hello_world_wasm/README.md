@@ -1,5 +1,7 @@
 # Hello World Rust
 
+[![CI](https://github.com/jabrena/hello-world-rust/actions/workflows/build.yaml/badge.svg)](https://github.com/jabrena/hello-world-rust/actions/workflows/build.yaml)
+
 ## Cargo & WASM
 
 ```
