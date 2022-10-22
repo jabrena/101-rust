@@ -22,3 +22,7 @@ Running in a web browser:
 python -m SimpleHTTPServer
 open http://localhost:8000/
 ```
+
+```
+cargo install -f cargo-upgrades
+```
