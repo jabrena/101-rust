@@ -4,6 +4,10 @@
 rustup target add wasm32-wasi
 brew install llvm
 curl -sSf https://raw.githubusercontent.com/WasmEdge/WasmEdge/master/utils/install.sh | bash
+
+docker build -t wasm_backend . 
+docker run -d -p 8080:8080 wasm_backend
+
 docker compose build
 docker compose up
 ```
@@ -42,3 +46,7 @@ docker compose up
  ⠋ Container hello_world_wasm_backend-server-1  Creating                                                                                                                   0.0s
 Error response from daemon: Unknown runtime specified io.containerd.wasmedge.v1
 ```
+
+Reported issue: https://github.com/WasmEdge/wasmedge_hyper_demo/issues/7
+
+dive wasm_backend   
