@@ -6,7 +6,6 @@ COPY Cargo.toml .
 
 FROM --platform=$BUILDPLATFORM buildbase AS buildserver
 COPY src ./src
-RUN pwd
 RUN --mount=type=cache,target=/usr/local/cargo/git/db \
     --mount=type=cache,target=/usr/local/cargo/registry/cache \
     --mount=type=cache,target=/usr/local/cargo/registry/index \
