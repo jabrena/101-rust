@@ -32,3 +32,8 @@ jobs:
           cd hello_world_wasmjs_web
           cargo install wasm-pack
           wasm-pack build --target web   
+
+      - name: rust_euler
+        run: |
+          cd rust_euler
+          cargo test
