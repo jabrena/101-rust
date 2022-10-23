@@ -76,25 +76,25 @@ mod tests {
     use super::*;
 
     #[test]
-    fn shuld_pass_euler1() {
+    fn should_pass_euler1() {
         assert_eq!(euler1(10), 23);
         assert_eq!(euler1(1000), 233168);
     }
 
     #[test]
-    fn shuld_pass_euler2() {
+    fn should_pass_euler2() {
         assert_eq!(euler2(10), (2 + 8 + 34));
         //assert_eq!(euler2(4000000), 4613732);
     }
 
     #[test]
-    fn shuld_pass_euler3() {
+    fn should_pass_euler3() {
         assert_eq!(euler3(13195), 29);
         assert_eq!(euler3(600851475143), 6857);
     }
 
     //#[test]
-    fn shuld_pass_euler4() {
+    fn should_pass_euler4() {
         assert_eq!(euler4(2), 9009);
         assert_eq!(euler4(3), 906609);
     }
