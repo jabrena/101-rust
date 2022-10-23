@@ -59,6 +59,17 @@ pub fn euler3(param: i64) -> u64 {//TODO convert to i64
     return *fac.last().unwrap();
 }
 
+// https://projecteuler.net/problem=4
+// Problem 4 :Largest palindrome product
+// A palindromic number reads the same both ways. 
+// The largest palindrome made from the product 
+// of two 2-digit numbers is 9009 = 91 × 99.
+// Find the largest palindrome made from the product of two 3-digit numbers.
+
+pub fn euler4(param: i64) -> i64 {
+    return 0;
+}
+
 #[cfg(test)]
 mod tests {
     // Note this useful idiom: importing names from outer (for mod tests) scope.
@@ -80,5 +91,11 @@ mod tests {
     fn shuld_pass_euler3() {
         assert_eq!(euler3(13195), 29);
         assert_eq!(euler3(600851475143), 6857);
+    }
+
+    //#[test]
+    fn shuld_pass_euler4() {
+        assert_eq!(euler4(2), 9009);
+        assert_eq!(euler4(3), 906609);
     }
 }
