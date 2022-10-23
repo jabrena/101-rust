@@ -6,4 +6,4 @@
 - [2. Hello World WASM to Web](./hello_world_wasm_web/README.md)
 - [3. Hello World WASM-JS to Web](./hello_world_wasmjs_web/README.md)
 - [4. Hello World WASM to Backend](./hello_world_wasm_backend/README.md) (WIP)
-- [4. Euler Problems with Rust](./rust_euler/README.md) (WIP)
+- [5. Euler Problems solved with Rust](./rust_euler/README.md) (WIP)
